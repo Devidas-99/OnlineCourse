@@ -17,9 +17,20 @@ public class Online {
 	
 	private String courseName;
 	
-	private Date registrationDate;
-	
 	private double feesPaid;
+	
+	private String registrationDate;
+	
+	
+	public String getRegistrationDate() {
+		return registrationDate;
+	}
+
+	public void setRegistrationDate(String registrationDate) {
+		this.registrationDate = registrationDate;
+	}
+
+	
 
 	public int getId() {
 		return id;
@@ -45,13 +56,7 @@ public class Online {
 		this.courseName = courseName;
 	}
 
-	public Date getRegistrationDate() {
-		return registrationDate;
-	}
-
-	public void setRegistrationDate(Date registrationDate) {
-		this.registrationDate = registrationDate;
-	}
+	
 
 	public double getFeesPaid() {
 		return feesPaid;
@@ -60,6 +65,13 @@ public class Online {
 	public void setFeesPaid(double feesPaid) {
 		this.feesPaid = feesPaid;
 	}
+
+	@Override
+	public String toString() {
+		return "Online [id=" + id + ", studentName=" + studentName + ", courseName=" + courseName + ", feesPaid="
+				+ feesPaid + ", registrationDate=" + registrationDate + "]";
+	}
+
 	
 	
 	
